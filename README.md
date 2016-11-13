@@ -21,7 +21,18 @@ The table where the MP3 is stored after extraction can be seen [here](https://dr
 
 App code for this YouMp3 app can be found [here](https://github.com/fahadzafar/AppYouMp3).
 
+
+#Code Review
+
+- Start reviewing code from here: https://github.com/fahadzafar/ServerYouMp3/blob/master/src/com/yt/main/Yt_ExtractServer.java
+- Change your info here: https://github.com/fahadzafar/ServerYouMp3/blob/master/src/com/yt/util/SharedData.java
+- The actual command that runs on the server to extract mp3 can be found here: https://github.com/fahadzafar/ServerYouMp3/blob/master/src/com/yt/util/SharedData.java
+- The worker thread code which is the core of this server can be found here: https://github.com/fahadzafar/ServerYouMp3/blob/master/src/com/yt/thread/WorkerThread.java
+
+
 Fore more images about the ap go [here](https://drive.google.com/open?id=0BzkvMWM-w80JNFE3VVUyYTI0czQ).
+
+
 
 
 
