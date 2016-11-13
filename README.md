@@ -14,7 +14,9 @@ This app strips the MP3 audio off any YouTube video selected through an android 
 
 It requires a server running at the backend that does the extraction and places the MP3 into a Parse table that can be downloaded from the app. The design of this entire application can be seen [here](https://drive.google.com/file/d/0BzkvMWM-w80JWXpCRkoybmpZcnc/view?usp=sharing).
 
-The server works using a passive approach, saves on a lot of money and dont need to use AWS 24/7. The server can run on any laptop and is multi-threaded. This server also auto adjusts pool timing whenc checking the work request queue and can alter pooling time based on usage. It runs "youtube-dl" to extract the audio, then updates the audio-strip request to allow the app to pick up the audio from the online datastore.
+
+
+The server works using a passive approach, saves on a lot of money and dont need to use AWS 24/7. The server can run on any laptop, desktop and AWS (even all at the same time) and is multi-threaded with full asynchronous compute. This server also auto adjusts pool timing whenc checking the work request queue and can alter pooling time based on usage. It runs "youtube-dl" to extract the audio, then updates the audio-strip request to allow the app to pick up the audio from the online datastore.
 
 The Parse data tables that store the MP3 extraction request can be seen [here](https://drive.google.com/open?id=0BzkvMWM-w80JdWVQMTVQZFdXTXM).
 
